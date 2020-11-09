@@ -1,0 +1,332 @@
+/*
+dark blue: #476A6F
+light blue: #258EA6
+dark green: #519E8A
+medium green: #7EB09B
+light green: #A3C4BC
+*/
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* login styling*/
+
+.login-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #258EA6;
+}
+
+.login-container .login-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px  #555;
+    background-color: #ffffff;
+}
+
+.login-container form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-container h1{
+    text-align: center;
+    width: 100%;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-container label{
+    font-size: 0.8em;
+    margin-bottom: 0.25em;
+    color: #222;
+    font-weight: lighter;
+}
+
+.login-container input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cfcfcf;
+}
+
+.login-container input::placeholder{
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #999;
+}
+
+.login-container .email, 
+.login-container .password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login-container .btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container button{
+    width: 100%;
+    background-color: #519E8A;
+    color: #fff;
+    border: 2px solid  #fff;
+    margin-bottom: 0.25em;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.login-container button:hover{
+    color: #519E8A;
+    background-color: #fff;
+    border: 2px solid #519E8A;
+}
+
+.login-container .cta{
+    text-decoration: none;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.login-container .cta:hover{
+    color: #7EB09B;
+}
+
+/* login styling end*/
+
+
+/* signup styling*/
+
+.signup-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #258EA6;
+}
+
+.signup-container .signup-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px  #555;
+    background-color: #ffffff;
+}
+
+.signup-container form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup-container h1{
+    text-align: center;
+    width: 100%;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.signup-container label{
+    font-size: 0.8em;
+    margin-bottom: 0.25em;
+    color: #222;
+    font-weight: lighter;
+}
+
+.signup-container input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cfcfcf;
+}
+
+.signup-container input::placeholder{
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #999;
+}
+
+.signup-container .firstname{
+    margin-right: 1%;
+}
+
+.signup-container .lastname{
+    margin-left: 1%;
+}
+
+.signup-container .firstname, 
+.signup-container .lastname, 
+.signup-container .email, 
+.signup-container .password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.signup-container .firstname,
+.signup-container .lastname{
+    width: 49%;
+}
+
+.signup-container .email,
+.signup-container .password{
+    width: 100%;
+}
+
+.signup-container .btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-container button{
+    width: 100%;
+    background-color: #519E8A;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-bottom: 0.25em;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.signup-container button:hover{
+    color: #519E8A;
+    background-color: #fff;
+    border: 2px solid #519E8A;
+}
+
+.signup-container .cta{
+    text-decoration: none;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.signup-container .cta:hover{
+    color: #7EB09B;
+}
+/* signup styling end*/
+
+/* quiz styling*/
+
+.quiz-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #258EA6;
+}
+
+.quiz-box{
+    width: 600px;
+    min-height: 450px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border:2px solid #476A6F;
+}
+
+.quiz-title{
+    text-align: center;
+    font-weight: lighter;
+    text-transform: capitalize;
+    background-color: #476A6F;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.questionbox{
+    margin: 10px 10px;
+    background-color:   #fff;
+    padding: 7px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 7px  #555;
+}
+
+.question{
+    font-weight: lighter;
+    letter-spacing: .05px;
+    color: #222;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.answerbtn{
+    background-color: #476A6F;
+    color: #fff;
+    margin-bottom: 0.25em;
+    margin-right: 0.30em;
+    padding: 5px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.answerbtn:hover{
+    background-color: rgb(36, 175, 36);
+    font-style: italic;
+    box-shadow: 0px 3px 6px  #555;
+}
+
+.score-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.playbtn{
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.playbtn:hover{
+    background-color: rgb(8, 151, 8);
+    box-shadow: 0px 3px 7px  #555;
+}
+
+/* quiz styling end*/

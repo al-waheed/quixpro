@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
-import Login from './components/Login'
-import SignUp from './components/SignUp'
-import { BrowserRouter , Route } from 'react-router-dom'
+import React, { Component } from 'react';
 
-export class App extends Component {
-    render() {
-        return (
-            <div>
-              <BrowserRouter>
-                <Route path='/' exact component={Login} />
-                <Route path='/SignUp' component={SignUp} />
-              </BrowserRouter>
-         </div>
-        )
-    }
+import Index from './components/Index';
+import Routers from './components/Routers';
+class App extends Component {
+	render() {
+		return (
+			<div>
+				<Routers />
+				<Index />
+			</div>
+		)
+	}
 }
 
-export default App
+export default App;

@@ -1,332 +1,413 @@
-/*
-dark blue: #476A6F
-light blue: #258EA6
-dark green: #519E8A
-medium green: #7EB09B
-light green: #A3C4BC
-*/
-
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 /* login styling*/
 
-.login-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #258EA6;
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
 }
 
-.login-container .login-form{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 50px  #555;
-    background-color: #ffffff;
+.login-container .login-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
-.login-container form{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.login-container form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.login-container h1{
-    text-align: center;
-    width: 100%;
-    color: #111;
-    margin-bottom: 10px;
-    font-weight: lighter;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.login-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 25px;
+  width: 100%;
+  color: #111;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
 }
 
-.login-container label{
-    font-size: 0.8em;
-    margin-bottom: 0.25em;
-    color: #222;
-    font-weight: lighter;
+.login-container label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
 }
 
-.login-container input{
-    padding: 10px 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid #cfcfcf;
+.login-container input {
+  padding: 12px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
 }
 
-.login-container input::placeholder{
-    font-size: 1.2em;
-    font-weight: lighter;
-    color: #999;
+.login-container input::placeholder {
+  font-size: 1.1em;
+  font-weight: lighter;
+  color: rgb(224, 220, 220);
 }
 
-.login-container .email, 
+.login-container .email,
 .login-container .password {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
-.login-container .btn{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.login-container .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-container button{
-    width: 100%;
-    background-color: #519E8A;
-    color: #fff;
-    border: 2px solid  #fff;
-    margin-bottom: 0.25em;
-    letter-spacing: 1px;
-    padding: 8px 0px;
-    font-weight: lighter;
-    font-size: 1em;
+.login-container button {
+  width: 100%;
+  background-color: #519e8a;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.50em;
+  letter-spacing: 2px;
+  padding: 8px 0px;
+  font-weight: lighter;
+  font-size: 0.9em;
+  transition: all 1s;
 }
 
-.login-container button:hover{
-    color: #519E8A;
-    background-color: #fff;
-    border: 2px solid #519E8A;
+.login-container button:hover {
+  color: #519e8a;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border: 2px solid #519e8a;
 }
 
-.login-container .cta{
-    text-decoration: none;
-    color: #999;
-    text-transform: capitalize;
+.login-container .cta {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #666;
+  text-transform: capitalize;
+  transition: all 1s;
 }
 
-.login-container .cta:hover{
-    color: #7EB09B;
+.login-container .cta:hover {
+  color: #4b9475;
 }
 
 /* login styling end*/
 
-
 /* signup styling*/
 
-.signup-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #258EA6;
+.signup-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
 }
 
-.signup-container .signup-form{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 50px  #555;
-    background-color: #ffffff;
+.signup-container .signup-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
-.signup-container form{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.signup-container form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.signup-container h1{
-    text-align: center;
-    width: 100%;
-    color: #111;
-    margin-bottom: 10px;
-    font-weight: lighter;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.signup-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 25px;
+  width: 100%;
+  color: #111;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
 }
 
-.signup-container label{
-    font-size: 0.8em;
-    margin-bottom: 0.25em;
-    color: #222;
-    font-weight: lighter;
+.signup-container label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
 }
 
-.signup-container input{
-    padding: 10px 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid #cfcfcf;
+.signup-container input {
+  padding: 12px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
 }
 
-.signup-container input::placeholder{
-    font-size: 1.2em;
-    font-weight: lighter;
-    color: #999;
+.signup-container input::placeholder {
+  font-size: 1.1em;
+  font-weight: lighter;
+  color: rgb(224, 220, 220);
 }
 
-.signup-container .firstname{
-    margin-right: 1%;
+.signup-container .firstname {
+  margin-right: 1%;
 }
 
-.signup-container .lastname{
-    margin-left: 1%;
-}
-
-.signup-container .firstname, 
-.signup-container .lastname, 
-.signup-container .email, 
-.signup-container .password {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+.signup-container .lastname {
+  margin-left: 1%;
 }
 
 .signup-container .firstname,
-.signup-container .lastname{
-    width: 49%;
+.signup-container .lastname,
+.signup-container .email,
+.signup-container .password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.signup-container .firstname,
+.signup-container .lastname {
+  width: 49%;
 }
 
 .signup-container .email,
-.signup-container .password{
-    width: 100%;
+.signup-container .password {
+  width: 100%;
 }
 
-.signup-container .btn{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.signup-container .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.signup-container button{
-    width: 100%;
-    background-color: #519E8A;
-    color: #fff;
-    border: 2px solid #fff;
-    margin-bottom: 0.25em;
-    letter-spacing: 1px;
-    padding: 8px 0px;
-    font-weight: lighter;
-    font-size: 1em;
+.signup-container button {
+  width: 100%;
+  background-color: #519e8a;
+  color: #fff;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.50em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-weight: lighter;
+  font-size: 0.9em;
+  transition: all 1s;
+  cursor: pointer;
 }
 
-.signup-container button:hover{
-    color: #519E8A;
-    background-color: #fff;
-    border: 2px solid #519E8A;
+.signup-container button:hover {
+  color: #519e8a;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border: 2px solid #519e8a;
 }
 
-.signup-container .cta{
-    text-decoration: none;
-    color: #999;
-    text-transform: capitalize;
+.signup-container .cta {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #666;
+  text-transform: capitalize;
+  transition: all 0.3s;
 }
 
-.signup-container .cta:hover{
-    color: #7EB09B;
+.signup-container .cta:hover {
+  color: #4b9475;
 }
 /* signup styling end*/
 
 /* quiz styling*/
 
-.quiz-container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #258EA6;
+.quiz-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
 }
 
-.quiz-box{
-    width: 600px;
-    min-height: 450px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    border:2px solid #476A6F;
+.quiz-box {
+  width: 60%;
+  min-height: 550px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 2;
+  backdrop-filter: blur(2rem);
 }
 
-.quiz-title{
-    text-align: center;
-    font-weight: lighter;
-    text-transform: capitalize;
-    background-color: #476A6F;
-    letter-spacing: 1px;
-    font-size: 30px;
+.quiz-title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: #476a6f;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 27px;
+  opacity: 0.9;
 }
 
-.questionbox{
-    margin: 10px 10px;
-    background-color:   #fff;
-    padding: 7px 18px;
-    border-radius: 3px;
-    box-shadow: 0px 3px 7px  #555;
+.circle1,
+.circle2 {
+  position: absolute;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 19rem;
+  width: 19rem;
+  border-radius: 50%;
 }
 
-.question{
-    font-weight: lighter;
-    letter-spacing: .05px;
-    color: #222;
-    margin-bottom: 5px;
-    font-size: 15px;
+.circle1 {
+  top: 2%;
+  right: 12%;
 }
 
-.answerbtn{
-    background-color: #476A6F;
-    color: #fff;
-    margin-bottom: 0.25em;
-    margin-right: 0.30em;
-    padding: 5px 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-    outline: none;
+.circle2 {
+  bottom: 2%;
+  left: 12%;
 }
 
-.answerbtn:hover{
-    background-color: rgb(36, 175, 36);
-    font-style: italic;
-    box-shadow: 0px 3px 6px  #555;
+.questionbox {
+  margin: 13px 20px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  padding: 14px 18px;
+  border-radius: 3px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
 }
 
-.score-board{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10rem 0;
+.question {
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color:#476a6f;
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
-.playbtn{
-    background-color: green;
-    color: white;
-    padding: 10px 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    letter-spacing: 1px;
-    margin-top: 10px;
+.answerbtn {
+  background-color: #476a6f;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 0.25em;
+  margin-right: 0.9em;
+  padding: 9px 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.5s;
 }
 
-.playbtn:hover{
-    background-color: rgb(8, 151, 8);
-    box-shadow: 0px 3px 7px  #555;
+.answerbtn:hover {
+  background-color: rgb(31, 134, 31);
+  box-shadow: 0px 3px 6px rgb(182, 178, 178);
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0;
+}
+
+.playbtn {
+  background-color:  rgb(8, 151, 8);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.playbtn:hover {
+  background-color: green;
+}
+
+.Error{
+  background-color: rgb(223, 136, 136);
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  text-align: center;
+  border: 2px solid rgb(241, 56, 56);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 100;
 }
 
 /* quiz styling end*/
+
+

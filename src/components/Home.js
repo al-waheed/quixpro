@@ -41,12 +41,11 @@ const Home = () => {
         <h1 className="quiz-title">Football quiz</h1>
         {questionLists.length > 0 &&
           responses < 5 &&
-          questionLists.map(({ question, answers, correct, questionId }) => (
+          questionLists.map((question) => (
             <QuestionBox
-              question={question}
-              options={answers}
-              key={questionId}
-              selected={(answer) => correctAnswer(answer, correct)}
+              {...question}
+              key={question.questionId}
+              selected={(answer) => correctAnswer(answer, question.correct)}
             />
           ))}
         <Toaster />
